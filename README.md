@@ -1,6 +1,6 @@
 # Nutrition Concierge
 
-An offline, zero-cloud dependency, local macronutrient, water, and supplement tracking application. It utilizes the Model Context Protocol (MCP) tool schema style to communicate with a localized SQLite ledger over a lightweight JSON-RPC stdin/stdout console loop.
+A zero-cloud dependency, local macronutrient, water, and supplement tracking application. It utilizes the Model Context Protocol (MCP) tool schema style to communicate with a localized SQLite ledger over a lightweight JSON-RPC stdin/stdout console loop.
 
 ## 📌 The Problem
 Modern nutrition trackers and smart health apps frequently require cloud-based accounts, sync personal biometric details to external remote endpoints, or enforce external AI model dependencies (using online API keys). This architecture exposes highly sensitive, private personal health records to data breaches, tracking, and latency issues, violating basic security principles of **Data Sovereignty** and **Personal Sovereignty**.

@@ -1,5 +1,5 @@
 ---
-name: nutrition-analyzer
+name: nutrition-concierge
 description: Tracks daily macronutrients, water intake, and logs vitamins.
 version: 1.2.0
 ---
