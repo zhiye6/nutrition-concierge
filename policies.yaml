@@ -1,0 +1,26 @@
+# policies.yaml
+version: "1.2.0"
+metadata:
+  project: "nutrition-concierge"
+  compliance_tier: "sovereign-local-data-isolation"
+
+environments:
+  localhost_sandbox:
+    blocked_tools:
+      # Explicitly state environment restrictions to keep your system safe
+      - execute_arbitrary_shell_commands
+      - modify_harness_core
+      - bypass_local_validation
+
+roles:
+  nutrition_concierge_executor:
+    allowed_tools:
+      - write_food_macros
+      - update_supplement_checklist
+      - delete_food_entry
+      - query_local_diary_db
+    security_guardrails:
+      enforce_least_privilege: true
+      sanitize_context_hygiene: true
+      block_medical_prescriptions: true
+      restrict_to_non_interactive_access: true
